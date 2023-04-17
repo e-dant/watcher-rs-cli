@@ -6,7 +6,7 @@ cargo run -- --path /some/path --exec 'some program --can=handle,arguments --jus
 ```
 
 ```sh
-# Formatting by the event works well
+# These {} will be auto-formatted according to the event
 cargo run -- --path / --exec 'echo {when} {path} {what} {kind}'
 ```
 
