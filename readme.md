@@ -2,7 +2,12 @@
 
 ```sh
 # On linux, best with `sudo` because we get to use fanotify
-  cargo run --path /some/path --exec 'some program --can=handle,arguments --just-fine'
+cargo run -- --path /some/path --exec 'some program --can=handle,arguments --just-fine'
+```
+
+```sh
+# Formatting by the event works well
+cargo run -- --path / --exec 'echo {when} {path} {what} {kind}'
 ```
 
 ```sh
