@@ -1,0 +1,11 @@
+[package]
+name = "watcher-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.2.1", features = ["derive"] }
+libc = "0.2.140"
+tokio = { version = "1", features = ["time", "io-std", "io-util", "rt", "rt-multi-thread", "macros"] }
+tokio-stream = "0"
+
